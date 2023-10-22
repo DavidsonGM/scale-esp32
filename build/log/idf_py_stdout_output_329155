@@ -1,0 +1,192 @@
+[0;32mI (103) esp_image: segment 2: paddr=0001b950 vaddr=403800ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40386c62
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x170c
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 19 2023 00:25:13[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a700h ( 42752) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001a728 vaddr=3fc8c000 size=01220h (  4640) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0001b950 vaddr=40380000 size=046c8h ( 18120) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c75ch (116572) map[0m
+[0;32mI (137) esp_image: segment 4: paddr=0003c784 vaddr=403846c8 size=078e8h ( 30952) load[0m
+[0;32mI (147) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (147) boot: Disabling RNG early entropy source...[0m
+[0;32mI (159) cpu_start: Unicore app[0m
+[0;32mI (159) cpu_start: Pro cpu up.[0m
+[0;32mI (168) cpu_start: Pro cpu start user code[0m
+[0;32mI (168) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (168) cpu_start: Application information:[0m
+[0;32mI (171) cpu_start: Project name:     mair-template[0m
+[0;32mI (176) cpu_start: App version:      0.7.5-4-gbe5e3d2-dirty[0m
+[0;32mI (182) cpu_start: Compile time:     Oct 19 2023 00:24:36[0m
+[0;32mI (188) cpu_start: ELF file SHA256:  46fe8aa56c66db0c...[0m
+[0;32mI (194) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (200) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (204) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (209) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (214) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (221) heap_init: At 3FC8E330 len 0004E3E0 (312 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (234) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (241) spi_flash: detected chip: generic[0m
+[0;32mI (245) spi_flash: flash io: dio[0m
+[0;33mW (249) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (262) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (269) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (276) app_start: Starting scheduler on CPU0[0m
+[0;32mI (281) main_task: Started on CPU0[0m
+[0;32mI (285) main_task: Calling app_main()[0m
+[0;32mI (289) HX711: Initializing scale.[0m
+[0;32mI (293) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (302) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1965) HX711: Média: -11.329401[0m
+[0;32mI (5646) HX711: Média: -26.009752[0m
+[0;32mI (9633) HX711: Média: -38.296570[0m
+[0;32mI (13620) HX711: Média: -45.796314[0m
+[0;32mI (17607) HX711: Média: -56.966145[0m
+[0;32mI (21595) HX711: Média: -64.465889[0m
+[0;32mI (25582) HX711: Média: -70.848648[0m
+[0;32mI (29570) HX711: Média: 4891.109863[0m
+[0;32mI (33558) HX711: Média: 6862.904785[0m
+[0;32mI (37546) HX711: Média: 6304.891602[0m
+[0;32mI (41533) HX711: Média: 5990.540527[0m
+[0;32mI (45520) HX711: Média: 5770.335449[0m
+[0;32mI (49508) HX711: Média: 5604.383789[0m
+[0;32mI (53496) HX711: Média: 5472.579590[0m
+[0;32mI (57484) HX711: Média: 5357.370605[0m
+[0;32mI (61472) HX711: Média: 5256.044434[0m
+[0;32mI (65460) HX711: Média: 5225.726562[0m
+[0;32mI (69448) HX711: Média: 5126.314941[0m
+[0;32mI (73436) HX711: Média: 5042.860352[0m
+[0;32mI (77424) HX711: Média: 4970.096680[0m
+[0;32mI (81412) HX711: Média: 4905.471191[0m
+[0;32mI (85400) HX711: Média: 4841.803223[0m
+[0;32mI (89388) HX711: Média: 4785.954102[0m
+[0;32mI (93376) HX711: Média: 4735.849609[0m
+[0;32mI (97364) HX711: Média: 4686.542480[0m
+[0;32mI (101352) HX711: Média: 4642.022949[0m
+[0;32mI (105340) HX711: Média: 4601.332520[0m
+[0;32mI (109328) HX711: Média: 4564.791504[0m
+[0;32mI (113316) HX711: Média: 4524.580078[0m
+[0;32mI (117304) HX711: Média: 4488.836426[0m
+[0;32mI (121292) HX711: Média: 4537.026367[0m
+[0;32mI (125280) HX711: Média: 4506.069824[0m
+[0;32mI (129268) HX711: Média: 4414.796387[0m
+[0;32mI (133256) HX711: Média: 4391.499512[0m
+[0;32mI (137244) HX711: Média: 4362.458008[0m
+[0;32mI (141232) HX711: Média: 4335.490723[0m
+[0;32mI (145220) HX711: Média: 4309.321289[0m
+[0;32mI (149208) HX711: Média: 4283.790527[0m
+[0;32mI (153196) HX711: Média: 4261.291016[0m
+[0;32mI (157184) HX711: Média: 4236.079102[0m
+[0;32mI (161172) HX711: Média: 4210.388672[0m
+[0;32mI (165160) HX711: Média: 4187.410645[0m
+[0;32mI (169148) HX711: Média: 4165.868652[0m
+[0;32mI (173136) HX711: Média: 4145.603516[0m
+[0;32mI (177124) HX711: Média: 4121.827637[0m
+[0;32mI (181112) HX711: Média: 4104.434570[0m
+[0;32mI (185100) HX711: Média: 4082.573730[0m
+[0;32mI (189088) HX711: Média: 4066.936035[0m
+[0;32mI (193076) HX711: Média: 4046.511230[0m
+[0;32mI (197064) HX711: Média: 4030.075439[0m
+[0;32mI (201052) HX711: Média: 4012.203857[0m
+[0;32mI (205040) HX711: Média: 3997.523438[0m
+[0;32mI (209028) HX711: Média: 3978.375244[0m
+[0;32mI (213016) HX711: Média: 3961.620361[0m
+[0;32mI (217004) HX711: Média: 3945.503906[0m
+[0;32mI (220992) HX711: Média: 3929.706543[0m
+[0;32mI (224980) HX711: Média: 3919.175049[0m
+[0;32mI (228968) HX711: Média: 3902.420410[0m
+[0;32mI (232955) HX711: Média: 3886.463379[0m
+[0;32mI (236943) HX711: Média: 3870.985107[0m
+[0;32mI (240930) HX711: Média: 3860.453613[0m
+[0;32mI (244917) HX711: Média: 3849.124268[0m
+[0;32mI (248904) HX711: Média: 3846.571045[0m
+[0;32mI (252891) HX711: Média: 3834.284424[0m
+[0;32mI (256878) HX711: Média: 3819.125244[0m
+[0;32mI (260866) HX711: Média: 3804.764160[0m
+[0;32mI (264853) HX711: Média: 3793.753906[0m
+[0;32mI (268840) HX711: Média: 3780.669189[0m
+[0;32mI (272827) HX711: Média: 3767.424805[0m
+[0;32mI (276814) HX711: Média: 3759.286865[0m
+[0;32mI (280801) HX711: Média: 3746.521484[0m
+[0;32mI (284788) HX711: Média: 3740.457764[0m
+[0;32mI (288775) HX711: Média: 3729.607178[0m
+[0;32mI (292762) HX711: Média: 3715.724609[0m
+[0;32mI (296749) HX711: Média: 3688.597900[0m
+[0;32mI (300736) HX711: Média: 3686.842529[0m
+[0;32mI (304723) HX711: Média: 3678.704590[0m
+[0;32mI (308710) HX711: Média: 3667.694336[0m
+[0;32mI (312697) HX711: Média: 3656.045654[0m
+[0;32mI (316684) HX711: Média: 3647.588623[0m
+[0;32mI (320672) HX711: Média: 3652.056396[0m
+[0;32mI (324660) HX711: Média: 3624.291504[0m
+[0;32mI (328647) HX711: Média: 3621.259766[0m
+[0;32mI (332634) HX711: Média: 3606.100586[0m
+[0;32mI (336621) HX711: Média: 3594.771240[0m
+[0;32mI (340608) HX711: Média: 3584.399170[0m
+[0;32mI (344595) HX711: Média: 3581.048340[0m
+[0;32mI (348582) HX711: Média: 3569.240234[0m
+[0;32mI (352569) HX711: Média: 3564.931885[0m
+[0;32mI (356557) HX711: Média: 3553.761963[0m
+[0;32mI (360545) HX711: Média: 3545.145264[0m
+[0;32mI (364532) HX711: Média: 3538.283691[0m
+[0;32mI (368519) HX711: Média: 3530.145752[0m
+[0;32mI (372506) HX711: Média: 3515.625000[0m
+[0;32mI (376493) HX711: Média: 3507.327393[0m
+[0;32mI (380480) HX711: Média: 3498.231934[0m
+[0;32mI (384467) HX711: Média: 3490.093994[0m
+[0;32mI (388454) HX711: Média: 3481.157959[0m
+[0;32mI (392441) HX711: Média: 3473.179688[0m
+[0;32mI (396428) HX711: Média: 3467.275635[0m
+[0;32mI (400415) HX711: Média: 3464.882080[0m
+[0;32mI (404402) HX711: Média: 3456.584473[0m
+[0;32mI (408389) HX711: Média: 3450.361328[0m
+[0;32mI (412376) HX711: Média: 3440.787109[0m
+[0;32mI (416363) HX711: Média: 3432.329834[0m
+[0;32mI (420350) HX711: Média: 3427.223633[0m
+[0;32mI (424337) HX711: Média: 3417.968750[0m
+[0;32mI (428324) HX711: Média: 3410.468994[0m
+[0;32mI (432311) HX711: Média: 3403.447998[0m
+[0;32mI (436298) HX711: Média: 3393.714355[0m
+[0;32mI (440285) HX711: Média: 3379.033936[0m
+[0;32mI (444272) HX711: Média: 3370.576660[0m
+[0;32mI (448259) HX711: Média: 3365.311035[0m
+[0;32mI (452246) HX711: Média: 3366.747070[0m
+[0;32mI (456234) HX711: Média: 3355.736816[0m
+[0;32mI (460222) HX711: Média: -538.864624[0m
+[0;32mI (464210) HX711: Média: -402.433105[0m
+[0;32mI (468198) HX711: Média: -371.955414[0m
+[0;32mI (472186) HX711: Média: -374.827667[0m
+[0;32mI (476174) HX711: Média: -359.987732[0m
+[0;32mI (480162) HX711: Média: 4356.713379[0m
+[0;32mI (484150) HX711: Média: 4059.915039[0m
+[0;32mI (488138) HX711: Média: 3810.827637[0m
+[0;32mI (492126) HX711: Média: 3682.055420[0m
+[0;32mI (496114) HX711: Média: 3603.387939[0m
+[0;32mI (500102) HX711: Média: 3561.421387[0m
+[0;32mI (504090) HX711: Média: 3820.880615[0m
+[0;32mI (508078) HX711: Média: 3747.638428[0m
+[0;32mI (512066) HX711: Média: 3704.554688[0m
+[0;32mI (516054) HX711: Média: 3672.002686[0m
+[0;32mI (520042) HX711: Média: 3641.524902[0m
+[0;32mI (524030) HX711: Média: 3619.025635[0m
+[0;32mI (528018) HX711: Média: 3592.696777[0m
+[0;32mI (532006) HX711: Média: 3567.803955[0m
