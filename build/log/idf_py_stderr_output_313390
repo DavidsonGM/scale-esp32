@@ -1,4 +1,0 @@
-CMake Error at components/arduino/CMakeLists.txt:219 (message):
-  esp32-arduino requires CONFIG_FREERTOS_HZ=1000 (currently 100)
-
-

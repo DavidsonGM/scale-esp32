@@ -388,6 +388,14 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# WiFi Configuration
+#
+CONFIG_ESP_WIFI_SSID="Goncalves_2g"
+CONFIG_ESP_WIFI_PASSWORD="3NMLWWXFFW"
+CONFIG_ESP_WIFI_MAXIMUM_RETRY=5
+# end of WiFi Configuration
+
+#
 # Arduino Configuration
 #
 CONFIG_ARDUINO_VARIANT="esp32c3"

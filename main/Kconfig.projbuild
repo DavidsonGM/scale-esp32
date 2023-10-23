@@ -1,0 +1,19 @@
+menu "WiFi Configuration"
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "ssid"
+        help
+            WiFi Network name.
+
+    config ESP_WIFI_PASSWORD
+        string "Wifi Password"
+        default "my_pass"
+        help
+            WiFi Password (WPA or WPA2).
+
+    config ESP_WIFI_MAXIMUM_RETRY
+        int "Max connection attempts"
+        default 5
+        help
+            Configure the maximun value of connection attempts
+endmenu
