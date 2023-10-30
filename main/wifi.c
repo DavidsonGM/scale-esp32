@@ -25,6 +25,8 @@
 static EventGroupHandle_t s_wifi_event_group;
 
 static int s_retry_num = 0;
+extern SemaphoreHandle_t wifiConnectionSemaphore;
+
 
 static void event_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data){
     if(event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START){
@@ -43,6 +45,7 @@ static void event_handler(void* arg, esp_event_base_t event_base, int32_t event_
         ESP_LOGI(TAG, "Received ip:" IPSTR, IP2STR(&event->ip_info.ip));
         s_retry_num = 0;
         xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+        xSemaphoreGive(wifiConnectionSemaphore);
     }
 }
 

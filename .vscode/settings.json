@@ -29,7 +29,8 @@
       "vector": "c",
       "string_view": "c",
       "initializer_list": "c",
-      "rtc.h": "c"
+      "rtc.h": "c",
+      "err.h": "c"
     },
   }
   
