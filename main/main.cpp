@@ -8,7 +8,9 @@
 /* ---------------------- Scale ----------------------*/
 
 #define TAG "HX711"
-#define CALIBRATION_FACTOR -1.94
+#define CALIBRATION_FACTOR -0.97
+#define MQTT_INTERVAL 300000 // Send data every 5 minutes
+#define OFFSET 30880 // Offset of .tare() method without anything on the scale
 
 // HX711 circuit wiring
 const int LOADCELL_DOUT_PIN = 2;
@@ -39,14 +41,15 @@ float average_weight;
 
 void measure_weight(void) {
     scale.set_scale(CALIBRATION_FACTOR); // calibration factor = (reading)/(known weight)
-    scale.tare(20);
+    // scale.tare(20);
+    scale.set_offset(30880);
 
     while(true) {
         ESP_LOGI(TAG, "Leitura: %f", scale.get_units());
         average_weight = scale.get_units(20);
         ESP_LOGI(TAG, "Média: %f", average_weight);
         scale.power_down();
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        vTaskDelay(5000 / portTICK_PERIOD_MS);
         scale.power_up();
     }
 }
@@ -97,9 +100,8 @@ void mqttConnected(void* params){
         while (true) {
             sprintf(msg, "Média: %f", average_weight);
             mqtt_send_message(TOPIC, msg);
-            vTaskDelay(3000 / portTICK_PERIOD_MS);
-        }
-        
+            vTaskDelay(MQTT_INTERVAL / portTICK_PERIOD_MS);
+        }       
 }
 
 void wifi_main(void) {
